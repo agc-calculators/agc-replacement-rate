@@ -1,0 +1,1 @@
+export * from '../esm/es5/agc-replacement-rate.define.js';

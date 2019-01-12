@@ -1,0 +1,127 @@
+{
+  "components": [
+    {
+      "tag": "agc-replacement-rate",
+      "dependencies": [],
+      "componentClass": "AgcReplacementRate",
+      "componentPath": "components/agc-replacement-rate/agc-replacement-rate.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-replacement-rate-inputs",
+      "dependencies": [],
+      "componentClass": "AgcReplacementRateInputs",
+      "componentPath": "components/agc-replacement-rate-inputs/agc-replacement-rate-inputs.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-replacement-rate-progress",
+      "dependencies": [],
+      "componentClass": "AgcReplacementRateProgress",
+      "componentPath": "components/agc-replacement-rate-progress/agc-replacement-rate-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-replacement-rate-results",
+      "dependencies": [],
+      "componentClass": "AgcReplacementRateResults",
+      "componentPath": "components/agc-replacement-rate-results/agc-replacement-rate-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-replacement-rate-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcReplacementRateResultsPlaceholder",
+      "componentPath": "components/agc-replacement-rate-results-placeholder/agc-replacement-rate-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}

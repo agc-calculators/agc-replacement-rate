@@ -1,0 +1,1 @@
+// AgcReplacementRate: CommonJS Main
