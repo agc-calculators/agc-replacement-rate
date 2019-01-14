@@ -13,11 +13,12 @@ class AgcReplacementRateResults {
             h("div", { style: { display: this.ready ? 'block' : 'none' } }, this.data && (h("ul", { class: "agc-results" },
                 h("li", null,
                     h("h2", { "data-i18n": "results.replacements-needed" }, "Total Replacements Needed"),
-                    h("span", { class: "agc-results__value" }, this.data['replacementsNeeded'])),
+                    h("span", { class: "agc-results__value" }, this.data['replacementsNeeded']),
+                    h("sub", null, "hd")),
                 h("li", null,
                     h("h2", { "data-i18n": "results.average-cow-age" }, "Average Cow Age"),
                     h("span", { class: "agc-results__value" }, this.data['averageCowAge']),
-                    h("sub", null, "Years")))))));
+                    h("sub", { "data-i18n": "results.years" }, "years")))))));
     }
     handleResults(e) {
         if (e.detail['socket'] !== this.socket) {

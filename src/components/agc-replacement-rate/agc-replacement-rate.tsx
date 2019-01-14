@@ -33,7 +33,7 @@ export class AgcReplacementRate {
                     <section data-wizard-section="1">
                         <div class="agc-wizard__field">
                             <label data-i18n="fields.herd-size">Herd Size</label>
-                            <input name="herdSize" type="number" required min="1" />
+                            <input name="herdSize" type="number" required min="1" step="1" />
                             <p class="agc-wizard__validation-message" data-i18n="validation.herd-size.required" data-validates="herdSize">Please enter a whole number.</p>
                             <p data-i18n="hints.herd-size">⮤ Enter the size of the herd.</p>
                         </div>
@@ -44,7 +44,7 @@ export class AgcReplacementRate {
                     <section data-wizard-section="2">
                         <div class="agc-wizard__field">
                             <label data-i18n="fields.replacement-rate">Replacement Rate</label>
-                            <input name="replacementRate" type="number" required />
+                            <input name="replacementRate" type="number" min="0" step="0.01" required />
                             <p class="agc-wizard__validation-message" data-i18n="validation.replacement-rate.required" data-validates="replacementRate">Please enter a value.</p>
                             <p data-i18n="hints.replacement-rate">⮤ Enter the desired replacement rate.</p>
                         </div>

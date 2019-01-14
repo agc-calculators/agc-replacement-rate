@@ -23,11 +23,12 @@ export class AgcReplacementRateResults {
                             <li>
                                 <h2 data-i18n="results.replacements-needed">Total Replacements Needed</h2>
                                 <span class="agc-results__value">{this.data['replacementsNeeded']}</span>
+                                <sub>hd</sub>
                             </li>
                             <li>
                                 <h2 data-i18n="results.average-cow-age">Average Cow Age</h2>
                                 <span class="agc-results__value">{this.data['averageCowAge']}</span>
-                                <sub>Years</sub>
+                                <sub data-i18n="results.years">years</sub>
                             </li>                        
                         </ul>)}
                 </div>
